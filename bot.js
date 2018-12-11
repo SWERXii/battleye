@@ -1,8 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = 'NTIxODQ5OTU4ODc0MzQ5NjA4.DvCnzg.lN69DpQmf4qEsQ2Lhmm5Usjq3_0';
-
-client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
 
@@ -22,3 +19,4 @@ client.on('message', message => {
     if (msg.includes('NIGERIA'))
         message.author.send('Reporta2 al INADI')
 });
+client.login(process.env.BOT_TOKEN);
