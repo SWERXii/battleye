@@ -19,4 +19,4 @@ client.on('message', message => {
     if (msg.includes('NIGERIA'))
         message.author.send('Reporta2 al INADI')
 });
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.OLQGG9ChZViGsweV12OvTPGzt21-koJQ);
