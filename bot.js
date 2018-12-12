@@ -9,7 +9,16 @@ client.on('ready', () => {
 client.on('message', message => {
     var sender = message.author;
     var msg = message.content.toLocaleUpperCase();
+    let inclusive = ['xs'];
+    let foundInText = false;
 
+    for (var i in inclusive){
+        if (message.content.toLowerCase().includes(inclusive[i].toLowerCase())) foundInText = true;
+    }
+    if (foundInText) {
+        message.delete();
+        message.channel.send(message.author + '_ intentó escribir en idioma inclusive_');
+    }
     if (sender.id === '521820814551678976') {
         return;
     }
@@ -19,5 +28,7 @@ client.on('message', message => {
     if (msg.includes('NIGERIA')){
         message.author.send('Reporta2 al INADI');
     }
+    
+    
 });
 client.login(process.env.BOT_TOKEN);
