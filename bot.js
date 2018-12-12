@@ -21,7 +21,7 @@ client.on('message', message => {
     }
     if (msg.includes('XS') || (msg.includes('ES'))) {
         message.delete();
-        message.channel.send(message.author + ' _acaba de escribir la palabra_ ' + message.content + ' _la cual contiene idioma inclusive que esta prohibido en este servxr._');
+        message.channel.send(message.author + ' _acaba de escribir en idioma inclusive, el cual esta prohibidx en este servxr._');
     }
 });
 client.login(process.env.BOT_TOKEN);
