@@ -19,7 +19,7 @@ client.on('message', message => {
     if (msg.includes('NIGERIA')){
         message.author.send('Reporta2 al INADI');
     }
-    if (msg.includes('xs') || (msg.includes('es'))) {
+    if (msg.includes('XS') || (msg.includes('ES'))) {
         message.delete();
         message.channel.send(message.author + ' _acaba de escribir la palabra_ ' + message.content + ' _la cual contiene idioma inclusive que esta prohibido en este servxr._');
     }
