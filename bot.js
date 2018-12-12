@@ -22,7 +22,7 @@ client.on('message', message => {
        if (sender.id === '521820814551678976') {
         return;
     }
-    if (msg.includes('xs') || (msg.includes('es'))) {
+    if (msg.includes('XS')) {
         message.delete();
         message.channel.send(message.author + ' acaba de escribir la palabra ' + message.content + ' la cual contiene idioma inclusive que esta prohibido en este servxr.');
     }
