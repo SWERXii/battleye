@@ -9,7 +9,7 @@ client.on('ready', () => {
 client.on('message', message => {
     var sender = message.author;
     var msg = message.content.toLocaleUpperCase();
-    let inclusive = ['xs', 'todes', 'elles', 'nosotres', 'bobes', 'divines', 'dibines', 'otres', 'les', 'chiques'];
+    let inclusive = ['xs', 'todes', 'elles', 'nosotres', 'bobes', 'divines', 'dibines', 'otres', 'chiques'];
     let foundInText = false;
 
     for (var i in inclusive){
