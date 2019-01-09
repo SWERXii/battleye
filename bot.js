@@ -15,7 +15,7 @@ client.on('message', message => {
     client.user.setStatus('available')
     client.user.setPresence({
         game: {
-            name: 'xvideos.com,
+            name: 'xvideos.com',
             type: "STREAMING",
             url: "https://xvideos.com"
         }
