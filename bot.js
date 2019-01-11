@@ -12,14 +12,9 @@ client.on('message', message => {
     let inclusive = ['xs', 'todes', 'elles', 'nosotres', 'bobes', 'divines', 'dibines', 'otres', 'chiques'];
     let foundInText = false;
 
-    client.user.setStatus('available')
-    client.user.setPresence({
-        game: {
-            name: 'xvideos.com',
-            type: "STREAMING",
-            url: "https://xvideos.com"
-        }
-    });
+    client.user.setStatus('available');
+    client.user.setGame('xvideos.com', 'https://twitch.tv/nigga');
+    
     for (var i in inclusive){
         if (message.content.toLowerCase().includes(inclusive[i].toLowerCase())) foundInText = true;
     }
