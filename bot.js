@@ -19,8 +19,7 @@ client.on('message', message => {
         if (message.content.toLowerCase().includes(inclusive[i].toLowerCase())) foundInText = true;
     }
     if (foundInText) {
-        message.delete();
-        message.channel.send(message.author + '_ intentó escribir en idioma inclusive_');
+        message.channel.send(message.author + '_ escribió en idioma inclusive_');
     }
     if (sender.id === '521820814551678976') {
         return;
